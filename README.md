@@ -4,6 +4,28 @@
 # bool-to-int8-ray
 bool to int8 serialization with ray.io
 
+## Installation
+
+```
+pip install bool-to-int8-ray
+```
+
+## Usage
+
+```py
+from bool_to_int8_ray import bool_to_int8_batch, int8_to_bool_batch
+import numpy as np
+
+# given lists of binary hashes
+hashvalues = np.array([
+    [1, 0, 1, 0, 1, 1, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0, 1]
+])
+# convert to list of int8 values
+serialized = bool_to_int8_batch(hashvalues)
+# convert back
+deserialized = int8_to_bool_batch(serialized)
+```
 
 ## Speed Test
 
