@@ -19,17 +19,19 @@ def get_version(path):
 
 
 setuptools.setup(
-    name='template_pypi',
-    version=get_version("template_pypi/__init__.py"),
+    name='bool-to-int8-ray',
+    version=get_version("bool-to-int8-ray/__init__.py"),
     description='lorem ipsum',
-    long_description=read('README.rst'),
-    url='http://github.com/myorg/template_pypi',
-    author='John Doe',
+    long_description=read('README.md'),
+    long_description_content_type='text/markdown',
+    url='http://github.com/satzbeleg/bool-to-int8-ray',
+    author='Ulf Hamster',
     author_email='554c46@gmail.com',
     license='Apache License 2.0',
-    packages=['template_pypi'],
-    install_requires=[],
-    # scripts=['scripts/examplescript.py'],
-    python_requires='>=3.6',
+    packages=['bool_to_int8_ray'],
+    install_requires=[
+        "numpy>=1.19.5,<2"
+    ],
+    python_requires='>=3.7',
     zip_safe=True
 )
