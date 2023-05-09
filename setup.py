@@ -20,8 +20,8 @@ def get_version(path):
 
 setuptools.setup(
     name='bool-to-int8-ray',
-    version=get_version("bool-to-int8-ray/__init__.py"),
-    description='lorem ipsum',
+    version=get_version("bool_to_int8_ray/__init__.py"),
+    description='bool to int8 serialization with ray.io',
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
     url='http://github.com/satzbeleg/bool-to-int8-ray',
@@ -30,7 +30,9 @@ setuptools.setup(
     license='Apache License 2.0',
     packages=['bool_to_int8_ray'],
     install_requires=[
-        "numpy>=1.19.5,<2"
+        "numpy>=1.19.5,<2",
+        "ray>=2,<3",
+        "psutil>=5"
     ],
     python_requires='>=3.7',
     zip_safe=True

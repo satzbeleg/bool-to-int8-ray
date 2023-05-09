@@ -2,6 +2,23 @@
 [![PyPi downloads](https://img.shields.io/pypi/dm/bool-to-int8-ray)](https://img.shields.io/pypi/dm/bool-to-int8-ray)
 
 # bool-to-int8-ray
+bool to int8 serialization with ray.io
+
+
+## Speed Test
+
+```sh
+source .venv/bin/activate
+python test/speedtest.py
+```
+
+Results
+```
+ 4.843421 -- numpy version, hash to int8
+ 6.015203 -- numpy version, int8 to hash
+ 1.946198 -- ray.io version, hash to int8
+ 2.653270 -- ray.io version, int8 to hash
+```
 
 ## Appendix
 
@@ -30,6 +47,7 @@ pip install -r requirements-dev.txt --no-cache-dir
 * Jupyter for the examples: `jupyter lab`
 * Check syntax: `flake8 --ignore=F401 --exclude=$(grep -v '^#' .gitignore | xargs | sed -e 's/ /,/g')`
 * Run Unit Tests: `PYTHONPATH=. pytest`
+* Run Speed Test: `python test/speedtest.py`
 
 Publish
 

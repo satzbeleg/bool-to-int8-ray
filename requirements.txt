@@ -1,2 +1,4 @@
 # public packages (see setup.py)
 numpy>=1.19.5,<2
+ray>=2,<3
+psutil>=5
