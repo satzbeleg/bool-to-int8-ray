@@ -9,8 +9,8 @@ import gc
 
 logger = logging.getLogger(__name__)
 
-PCT_CPU = float(os.environ.get("PCT_CPU", "0.9"))
-NUM_CPU = os.environ.get("NUM_CPU")
+PCT_CPU = float(os.environ.get("B2I8_PCT_CPU", "0.9"))
+NUM_CPU = os.environ.get("B2I8_NUM_CPU")
 if NUM_CPU is None:
     NUM_CPU = max(1, int(psutil.cpu_count(logical=False) * PCT_CPU))
 ray.init(num_cpus=NUM_CPU)
