@@ -12,6 +12,10 @@ pip install bool-to-int8-ray
 
 ## Usage
 
+```sh
+export B2I8_PCT_CPU=0.6
+```
+
 ```py
 from bool_to_int8_ray import bool_to_int8_batch, int8_to_bool_batch
 import numpy as np
@@ -31,15 +35,16 @@ deserialized = int8_to_bool_batch(serialized)
 
 ```sh
 source .venv/bin/activate
+export B2I8_PCT_CPU=0.6
 python test/speedtest.py
 ```
 
 Results
 ```
- 4.843421 -- numpy version, hash to int8
- 6.015203 -- numpy version, int8 to hash
- 1.946198 -- ray.io version, hash to int8
- 2.653270 -- ray.io version, int8 to hash
+ 4.776991 -- numpy version, hash to int8
+ 6.031101 -- numpy version, int8 to hash
+ 2.308446 -- ray.io version, hash to int8
+ 3.023865 -- ray.io version, int8 to hash
 ```
 
 ## Appendix
