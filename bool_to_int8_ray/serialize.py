@@ -8,6 +8,11 @@ import gc
 
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(name)s: %(message)s",
+    datefmt="%y-%m-%d %H:%M:%S"
+)
 
 PCT_CPU = float(os.environ.get("B2I8_PCT_CPU", "0.9"))
 NUM_CPU = os.environ.get("B2I8_NUM_CPU")
