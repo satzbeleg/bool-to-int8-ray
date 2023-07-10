@@ -1,0 +1,16 @@
+{
+  "creators": [{
+    "name": "Ulf Hamster",
+    "orcid": "0000-0002-0440-4868"
+  }],
+  "title": "bool-to-int8-ray: Boolean Vectors to 8-bit Integer Vector Serialization with Ray.io",
+  "description": "",
+  "license": "Apache-2.0",
+  "upload_type": "software",
+  "keywords": [
+    "ray.io",
+    "CPU parallelization",
+    "serialization",
+    "binary data"
+  ]
+}

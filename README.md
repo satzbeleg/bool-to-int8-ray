@@ -1,7 +1,7 @@
 [![PyPI version](https://badge.fury.io/py/bool-to-int8-ray.svg)](https://badge.fury.io/py/bool-to-int8-ray)
 [![PyPi downloads](https://img.shields.io/pypi/dm/bool-to-int8-ray)](https://img.shields.io/pypi/dm/bool-to-int8-ray)
 
-# bool-to-int8-ray
+# bool-to-int8-ray: Boolean Vectors to 8-bit Integer Vector Serialization with Ray.io
 bool to int8 serialization with ray.io
 
 ## Installation
