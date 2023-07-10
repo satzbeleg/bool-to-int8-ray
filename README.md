@@ -2,7 +2,7 @@
 [![PyPi downloads](https://img.shields.io/pypi/dm/bool-to-int8-ray)](https://img.shields.io/pypi/dm/bool-to-int8-ray)
 
 # bool-to-int8-ray: Boolean Vectors to 8-bit Integer Vector Serialization with Ray.io
-bool to int8 serialization with ray.io
+The software serializes a series of binary vectors, e.g., 0001010101..., to 8-bit integer numbers, and deserializes too. The python code is parallelized for CPUs with Ray.io.
 
 ## Installation
 
